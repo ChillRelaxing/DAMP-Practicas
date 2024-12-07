@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://campus.univo.edu.sv/pluginfile.php/566328/mod_resource/content/0/index.html -->
+<html lang="es" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7</title>
+    <link href="./Práctica 7_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Práctica 7_files/m=el_main_css"></head>
+<body> 
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Agregar producto
+        </font></font></button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nuevo producto</font></font></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerca"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label>
+                                <input type="text" class="form-control" id="txtNombre">
+                            </div>
+                            <div class="col-5">
+                                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cantidad</font></font></label>
+                                <input type="text" class="form-control" id="txtCantidad">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precio</font></font></label>
+                                <input type="text" class="form-control" id="txtPrecio">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cancelar"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cancelar</font></font></button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btn-guardar"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Guardar</font></font></button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <table class="table table-brodered mt-3">
+            <thead>
+                <tr>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">identificación</font></font></th>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></th>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Existencias</font></font></th>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precio</font></font></th>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Detalles</font></font></th>
+                </tr>
+            </thead>
+            <tbody id="filas-content">
+    
+            </tbody>
+        </table>
+    
+        <template id="filas-template"></template>
+
+        <table class="table table-bordered mt-5" style="width: 400px;">
+            <thead>
+                <tr>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Producto</font></font></th>
+                    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sumatoria</font></font></th>
+                </tr>
+            </thead>
+            <tbody id="detalles-content"></tbody>
+        </table>
+
+        <template id="detalles-template"></template>
+
+    </div> <!-- end container -->
+
+    <script src="./Práctica 7_files/script.js.descarga"></script>
+    <script src="./Práctica 7_files/bootstrap.bundle.min.js.descarga" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./Práctica 7_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Texto original</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Valora esta traducción</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Tu opinión servirá para ayudar a mejorar el Traductor de Google</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Buena traducción" aria-label="Buena traducción" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mala traducción" aria-label="Mala traducción" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./Práctica 7_files/saved_resource.html"></iframe></div></div></div>
+
+</body></html>
